@@ -37,8 +37,7 @@ body {
   z-index: 1000;
 }
 
-.nav-left,
-.nav-right {
+.nav-left {
   display: flex;
   gap: 28px;
 }
@@ -61,7 +60,7 @@ body {
 }
 
 /* =========================
-   HERO SECTION
+   HERO
 ========================= */
 
 .hero {
@@ -75,7 +74,6 @@ body {
 
 .hero-image img {
   width: 420px;
-  height: auto;
   border-radius: 35px;
   object-fit: cover;
   box-shadow: 0 15px 40px rgba(0,0,0,0.12);
@@ -113,7 +111,7 @@ body {
   display: inline-block;
   padding: 15px 30px;
   background: #263b5e;
-  color: white !important;
+  color: white;
   text-decoration: none;
   border-radius: 14px;
   font-weight: 700;
@@ -127,7 +125,7 @@ body {
 
 .secondary {
   background: #dfe5ef;
-  color: #1d1d1d !important;
+  color: #1d1d1d;
 }
 
 .secondary:hover {
@@ -135,7 +133,7 @@ body {
 }
 
 /* =========================
-   GENERAL SECTIONS
+   SECTIONS
 ========================= */
 
 .section {
@@ -187,7 +185,6 @@ body {
 .timeline-item h3 {
   font-size: 28px;
   margin: 10px 0;
-  color: #1f2f4d;
 }
 
 .timeline-item p {
@@ -196,14 +193,8 @@ body {
 }
 
 /* =========================
-   EXPERIENCE / CARDS
+   CARDS
 ========================= */
-
-.light-section {
-  background: #eef2f8;
-  max-width: none;
-  padding: 90px max(40px, calc((100% - 1100px) / 2));
-}
 
 .card {
   background: white;
@@ -211,6 +202,7 @@ body {
   border-radius: 18px;
   border-left: 6px solid #263b5e;
   box-shadow: 0 8px 25px rgba(0,0,0,0.05);
+  margin-bottom: 30px;
 }
 
 .card h3 {
@@ -218,13 +210,8 @@ body {
   margin-bottom: 12px;
 }
 
-.card p {
-  font-size: 17px;
-  color: #444;
-}
-
 /* =========================
-   TWO COLUMN SECTION
+   TWO COLUMN
 ========================= */
 
 .two-column {
@@ -233,13 +220,8 @@ body {
   gap: 60px;
 }
 
-.two-column p {
-  font-size: 17px;
-  color: #444;
-}
-
 /* =========================
-   CONTACT CTA
+   CONTACT
 ========================= */
 
 .contact-cta {
@@ -250,17 +232,6 @@ body {
   max-width: 700px;
   margin: 0 auto 35px;
   font-size: 18px;
-  color: #444;
-}
-
-/* =========================
-   FOOTER
-========================= */
-
-footer {
-  text-align: center;
-  padding: 50px 20px;
-  color: #666;
 }
 
 /* =========================
@@ -275,12 +246,12 @@ footer {
     gap: 50px;
   }
 
-  .hero-content h1 {
-    font-size: 52px;
-  }
-
   .button-group {
     justify-content: center;
+  }
+
+  .hero-content h1 {
+    font-size: 52px;
   }
 }
 
@@ -291,9 +262,7 @@ footer {
     gap: 18px;
   }
 
-  .nav-left,
-  .nav-right {
-    gap: 18px;
+  .nav-left {
     flex-wrap: wrap;
     justify-content: center;
   }
