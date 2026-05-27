@@ -1,0 +1,83 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #111;
+  background: white;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 45px;
+  font-weight: bold;
+}
+
+.nav-links a {
+  margin-right: 35px;
+  color: #111;
+  text-decoration: none;
+}
+
+.nav-links a:hover {
+  border-bottom: 2px solid #111;
+}
+
+.logo {
+  font-size: 18px;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
+  min-height: 80vh;
+  padding: 40px 80px;
+}
+
+.profile-img {
+  width: 430px;
+  border-radius: 35px;
+}
+
+.hero-text {
+  max-width: 600px;
+  text-align: center;
+}
+
+.hero-text h1 {
+  font-size: 48px;
+  line-height: 1.15;
+}
+
+.hero-text p {
+  font-size: 17px;
+  line-height: 1.6;
+}
+
+.button {
+  display: block;
+  width: 260px;
+  margin: 12px auto;
+  padding: 12px;
+  background: #263b5e;
+  color: white;
+  text-decoration: none;
+  border-radius: 12px;
+  font-weight: bold;
+}
+
+.page {
+  max-width: 1000px;
+  margin: 60px auto;
+  padding: 0 30px;
+}
+
+.card {
+  padding: 25px;
+  margin: 25px 0;
+  border-left: 5px solid #263b5e;
+  background: #f7f7f7;
+  border-radius: 10px;
+}
