@@ -264,6 +264,13 @@ body {
   transform: scale(1.02);
 }
 
+.project-buttons { 
+   display: flex; 
+   gap: 12px; 
+   margin-top: 20px; 
+   flex-wrap: wrap; 
+}
+
 .caption {
   display: none;
 }
