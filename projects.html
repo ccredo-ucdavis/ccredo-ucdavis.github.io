@@ -28,45 +28,56 @@
 
   </nav>
 
-  <section class="section">
+<section class="section">
 
-    <h2>Engineering Projects</h2>
+  <h2>Engineering Projects</h2>
 
-    <div class="card">
+  <div class="project-feature">
 
-      <h3>HVAC Fault Detection Using SkySpark</h3>
-
-      <p>
-        Developed diagnostics to analyze HVAC trends
-        and identify abnormal system behavior.
-      </p>
-
+    <div class="project-images">
+      <img src="/images/skyspark-thermoostat.png" alt="SkySpark TherMOOstat Review Page">
+      <img src="/images/skyspark-tririga.png" alt="SkySpark TRIRIGA Workorder Lookup">
+      <img src="/images/skyspark-code.png" alt="SkySpark Axon Code">
     </div>
 
-    <div class="card">
-
-      <h3>MATLAB Yahtzee Application</h3>
-
-      <p>
-        Built an interactive MATLAB App Designer application
-        with custom UI and game logic.
-      </p>
-
-    </div>
-
-    <div class="card">
-
-      <h3>Beam Vibration Analysis</h3>
+    <div class="project-text">
+      <h3>SkySpark HVAC Analytics & Workorder Tools</h3>
 
       <p>
-        Analyzed accelerometer data and vibration response
-        during experimental beam testing.
+        During my internship with UC Davis Facilities Management Energy Engineering,
+        I developed SkySpark-based tools to help review HVAC system behavior,
+        diagnose building issues, and connect equipment data with maintenance workorders.
       </p>
 
+      <h4>TRIRIGA Task Workorder Lookup</h4>
+      <p>
+        I created a view that connects building and equipment information with
+        TRIRIGA workorder records. This allows users to quickly search task IDs,
+        view task names, identify responsible organizations, and open linked
+        maintenance records directly from SkySpark.
+      </p>
+
+      <h4>TherMOOstat Review Page</h4>
+      <p>
+        I developed a review page for zone-level HVAC diagnostics that displays
+        relevant temperature, setpoint, airflow, damper, and workorder information
+        in one view. This helps identify issues such as zones being too hot or too cold,
+        sensor problems, and unusual discharge air temperature behavior.
+      </p>
+
+      <h4>Axon Development</h4>
+      <p>
+        The backend logic was written using Axon functions to query equipment,
+        points, sites, and workorders. The code pulls relevant sensor points,
+        organizes equipment metadata, and formats the results into usable review cards
+        and tables.
+      </p>
     </div>
 
-  </section>
+  </div>
 
-</body>
+</section>
+
+  </body>
 
 </html>
