@@ -474,3 +474,137 @@ body {
     grid-template-columns: 1fr;
   }
 }
+
+/* =========================
+   CONTACT PAGE
+========================= */
+
+.contact-page {
+  min-height: 100vh;
+  padding: 150px 90px 80px;
+
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: 100px;
+
+  background: #f5f5f5;
+}
+
+.contact-form-section h1,
+.contact-info-section h1 {
+  font-size: 56px;
+  color: #152238;
+  margin-bottom: 45px;
+}
+
+.contact-form-section form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form-section label {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: #222;
+}
+
+.contact-form-section label span {
+  color: #263b5e;
+}
+
+.contact-form-section input,
+.contact-form-section textarea {
+  width: 100%;
+  padding: 18px;
+  margin-bottom: 28px;
+
+  border: 1px solid #ccc;
+  border-radius: 4px;
+
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+  background: white;
+}
+
+.contact-form-section textarea {
+  min-height: 180px;
+  resize: vertical;
+}
+
+.contact-form-section button {
+  width: fit-content;
+  padding: 18px 38px;
+
+  background: #263b5e;
+  color: white;
+
+  border: none;
+  border-radius: 999px;
+
+  font-size: 16px;
+  font-weight: 800;
+  cursor: pointer;
+
+  transition: 0.25s;
+}
+
+.contact-form-section button:hover {
+  background: #39527d;
+  transform: translateY(-2px);
+}
+
+.contact-icon {
+  width: 72px;
+  height: 72px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #0077b5;
+  color: white;
+
+  border-radius: 8px;
+  font-size: 36px;
+  font-weight: 800;
+  text-decoration: none;
+
+  margin-bottom: 35px;
+}
+
+.contact-detail {
+  margin-bottom: 32px;
+}
+
+.contact-detail h3 {
+  font-size: 24px;
+  margin-bottom: 8px;
+  color: #222;
+}
+
+.contact-detail p,
+.contact-detail a {
+  font-size: 22px;
+  color: #333;
+  text-decoration: none;
+}
+
+.contact-detail a:hover {
+  color: #263b5e;
+}
+
+/* Mobile contact page */
+
+@media (max-width: 900px) {
+  .contact-page {
+    grid-template-columns: 1fr;
+    padding: 150px 30px 60px;
+    gap: 60px;
+  }
+
+  .contact-form-section h1,
+  .contact-info-section h1 {
+    font-size: 42px;
+  }
+}
