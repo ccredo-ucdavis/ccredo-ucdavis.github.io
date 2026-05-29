@@ -227,7 +227,13 @@ body {
 }
 
 .project-images img:first-child {
-  grid-column: span 2;
+  max-height: 550px;
+  object-fit: cover;
+}
+
+.project-images img {
+  max-height: 250px;
+  object-fit: cover;
 }
 
 .caption {
