@@ -113,6 +113,26 @@
 
   </section>
 
+  <!-- LIGHTBOX -->
+
+<div id="lightbox" onclick="closeLightbox()">
+  <img id="lightbox-img"
+       src=""
+       alt="Expanded image"
+       onclick="event.stopPropagation()">
+</div>
+
+<script>
+  function openLightbox(src) {
+    document.getElementById("lightbox-img").src = src;
+    document.getElementById("lightbox").style.display = "flex";
+  }
+
+  function closeLightbox() {
+    document.getElementById("lightbox").style.display = "none";
+  }
+</script>
+
 </body>
 
 </html>
