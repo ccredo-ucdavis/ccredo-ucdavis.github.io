@@ -505,6 +505,25 @@ body {
    ABOUT PAGE
 ========================= */
 
+.about-layout {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 50px;
+  align-items: start;
+}
+
+.about-side-image img {
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+.about-side-image img:hover {
+  transform: scale(1.02);
+}
+
 .image-gallery {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -532,6 +551,18 @@ body {
   }
 }
 
+@media (max-width: 900px) {
+
+  .about-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .about-side-image {
+    max-width: 450px;
+    margin: auto;
+  }
+
+}
 
 /* =========================
    LIGHTBOX
