@@ -31,7 +31,7 @@
   <section class="hero">
 
     <div class="hero-image">
-      <img src="/images/FullSizeRender.jpeg" alt="Collin Credo" onclick="openLightbox(this.src)">
+      <img src="/images/FullSizeRender.jpeg" alt="Collin Credo">
     </div>
 
     <img src="/images/curiosity.png" class="hero-decoration curiosity" alt="Mars Curiosity Rover">
@@ -146,21 +146,6 @@
     </div>
 
   </section>
-
-  <div id="lightbox" onclick="closeLightbox()">
-    <img id="lightbox-img" src="" alt="Expanded image" onclick="event.stopPropagation()">
-  </div>
-
-  <script>
-    function openLightbox(src) {
-      document.getElementById("lightbox-img").src = src;
-      document.getElementById("lightbox").style.display = "flex";
-    }
-
-    function closeLightbox() {
-      document.getElementById("lightbox").style.display = "none";
-    }
-  </script>
 
   <footer class="footer">
 

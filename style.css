@@ -623,50 +623,6 @@ body {
   box-shadow: 0 10px 35px rgba(0,0,0,0.4);
 }
 
-/* Add these styles to the bottom of your style.css if you haven't yet */
-#lightbox {
-  position: relative; /* Anchor tracking point context for the layout arrows */
-}
-
-.lightbox-nav-btn {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background: rgba(255, 255, 255, 0.1);
-  color: #fff;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  font-size: 38px;
-  width: 55px;
-  height: 55px;
-  line-height: 48px;
-  text-align: center;
-  cursor: pointer;
-  border-radius: 50%;
-  z-index: 3100;
-  transition: all 0.2s ease;
-  user-select: none;
-}
-
-.lightbox-nav-btn:hover {
-  background: rgba(255, 255, 255, 0.25);
-  transform: translateY(-50%) scale(1.08);
-}
-
-.lightbox-nav-btn.prev-btn { left: 40px; }
-.lightbox-nav-btn.next-btn { right: 40px; }
-
-@media (max-width: 768px) {
-  .lightbox-nav-btn {
-    width: 44px;
-    height: 44px;
-    line-height: 38px;
-    font-size: 26px;
-    background: rgba(21, 34, 56, 0.8); /* Darker backing fallback on narrow viewports */
-  }
-  .lightbox-nav-btn.prev-btn { left: 15px; }
-  .lightbox-nav-btn.next-btn { right: 15px; }
-}
-
 /* =========================
    RESPONSIVE
 ========================= */
